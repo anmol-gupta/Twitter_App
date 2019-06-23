@@ -28,10 +28,10 @@ app.use(cookieParser());
 app.use(express.static(path.join(__dirname, 'public')));
 
 const client = new Twitter({
-  consumer_key: 'rWtF3uqFQ6ZQIq8qH36GvlUCo',
-  consumer_secret: 'ZfoqZiwGCeBYtjMnLZe8nYdbZ5LnupAM1pBvmIOHqxHlmkw9Rz',
-  access_token: '233907734-s6eQ92LicZSyZ3qHSHne3TbD3rVj2amvihTxTzGC',
-  access_token_secret: '6MAOyy30heFYivH0sdL93cntPGyaFa695fGjQ1Qhuw5fU'
+  consumer_key: 'CONSUMER_KEY',
+  consumer_secret: 'CONSUMER_SECRET_KEY',
+  access_token: 'ACCESS_TOKEN',
+  access_token_secret: 'ACCESS_TOKEN_SECRET'
 });
 
 app.get('/home_timeline', (req, res) => {
